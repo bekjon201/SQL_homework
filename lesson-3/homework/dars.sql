@@ -141,7 +141,7 @@ CREATE TABLE Products (
 
  --FOREIGN KEY ON DELETE/UPDATE CASCADE bilan:
 
-ALTER TABLE Products
+bekjon TABLE Products
  ADD CONSTRAINT FK_Prod_Cat
   FOREIGN KEY (CategoryID)
    REFERENCES Categories(CategoryID)
