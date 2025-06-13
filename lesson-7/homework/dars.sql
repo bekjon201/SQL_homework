@@ -6,19 +6,19 @@ SELECT MIN(Price) AS MinPrice FROM Products;
 
 
 
-Копировать
-Редактировать
+ГЉГ®ГЇГЁГ°Г®ГўГ ГІГј
+ГђГҐГ¤Г ГЄГІГЁГ°Г®ГўГ ГІГј
 SELECT MAX(Salary) AS MaxSalary FROM Employees;
 
 
 
-Копировать
-Редактировать
+ГЉГ®ГЇГЁГ°Г®ГўГ ГІГј
+ГђГҐГ¤Г ГЄГІГЁГ°Г®ГўГ ГІГј
 SELECT COUNT(*) AS TotalCustomers FROM Customers;
 
 
-Копировать
-Редактировать
+ГЉГ®ГЇГЁГ°Г®ГўГ ГІГј
+ГђГҐГ¤Г ГЄГІГЁГ°Г®ГўГ ГІГј
 SELECT COUNT(DISTINCT Category) AS UniqueCategories FROM Product;
 
 
