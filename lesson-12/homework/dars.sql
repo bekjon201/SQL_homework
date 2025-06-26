@@ -153,7 +153,7 @@ GROUP BY
 -- Cart1 va Cart2 Jadval Solishtirish (FULL JOIN)
 -- ============================================
 
--- Jadval mavjud bo‘lsa, o‘chirib tashlash
+-- Jadval mavjud boâ€˜lsa, oâ€˜chirib tashlash
 DROP TABLE IF EXISTS Cart1;
 DROP TABLE IF EXISTS Cart2;
 GO
@@ -172,12 +172,12 @@ CREATE TABLE Cart2
 );
 GO
 
--- Cart1 ga ma’lumot kiritish
+-- Cart1 ga maâ€™lumot kiritish
 INSERT INTO Cart1 (Item) VALUES
 ('Sugar'),('Bread'),('Juice'),('Soda'),('Flour');
 GO
 
--- Cart2 ga ma’lumot kiritish
+-- Cart2 ga maâ€™lumot kiritish
 INSERT INTO Cart2 (Item) VALUES
 ('Sugar'),('Bread'),('Butter'),('Cheese'),('Fruit');
 GO
@@ -210,19 +210,19 @@ ON
 -- Match1 Jadvali: Yevropa Futbol Natijalari
 -- ========================================
 
--- Agar jadval mavjud bo‘lsa, uni o‘chirib tashlaydi
+-- Agar jadval mavjud boâ€˜lsa, uni oâ€˜chirib tashlaydi
 DROP TABLE IF EXISTS match1;
 GO
 
 -- Jadvalni yaratish
 CREATE TABLE match1 (
-    MatchID INT PRIMARY KEY,        -- Har bir o‘yinning noyob identifikatori
-    Match VARCHAR(30),              -- O‘yin ishtirokchilari (masalan: Italy-Spain)
+    MatchID INT PRIMARY KEY,        -- Har bir oâ€˜yinning noyob identifikatori
+    Match VARCHAR(30),              -- Oâ€˜yin ishtirokchilari (masalan: Italy-Spain)
     Score VARCHAR(5)                -- Hisob (masalan: 2:0)
 );
 GO
 
--- Jadvalga ma’lumot kiritish
+-- Jadvalga maâ€™lumot kiritish
 INSERT INTO match1 (MatchID, Match, Score) VALUES 
     (1, 'Italy-Spain',    '2:0'),
     (2, 'Spain-France',   '2:1'),
@@ -236,7 +236,7 @@ GO
 -- Customers who never placed an order
 -- ================================================
 
--- Jadval mavjud bo‘lsa, o‘chiriladi
+-- Jadval mavjud boâ€˜lsa, oâ€˜chiriladi
 DROP TABLE IF EXISTS Orders;
 DROP TABLE IF EXISTS Customers;
 GO
@@ -255,7 +255,7 @@ CREATE TABLE Orders (
 );
 GO
 
--- Customers jadvaliga ma’lumot kiritish
+-- Customers jadvaliga maâ€™lumot kiritish
 INSERT INTO Customers (id, name) VALUES 
 (1, 'Joe'),
 (2, 'Henry'),
@@ -263,7 +263,7 @@ INSERT INTO Customers (id, name) VALUES
 (4, 'Max');
 GO
 
--- Orders jadvaliga ma’lumot kiritish
+-- Orders jadvaliga maâ€™lumot kiritish
 INSERT INTO Orders (id, customerId) VALUES 
 (1, 3),
 (2, 1);
@@ -283,7 +283,7 @@ WHERE
     );
 
 	-- ================================================
--- Customers va Orders jadvallarini yaratish va ma’lumot kiritish
+-- Customers va Orders jadvallarini yaratish va maâ€™lumot kiritish
 -- ================================================
 
 -- Customers jadvalini yaratish
@@ -298,19 +298,19 @@ CREATE TABLE Orders (
     customerId INT
 );
 
--- Customers jadvalidagi mavjud ma’lumotlarni tozalash
+-- Customers jadvalidagi mavjud maâ€™lumotlarni tozalash
 TRUNCATE TABLE Customers;
 
--- Customers jadvaliga ma’lumot kiritish
+-- Customers jadvaliga maâ€™lumot kiritish
 INSERT INTO Customers (id, name) VALUES (1, 'Joe');
 INSERT INTO Customers (id, name) VALUES (2, 'Henry');
 INSERT INTO Customers (id, name) VALUES (3, 'Sam');
 INSERT INTO Customers (id, name) VALUES (4, 'Max');
 
--- Orders jadvalidagi mavjud ma’lumotlarni tozalash
+-- Orders jadvalidagi mavjud maâ€™lumotlarni tozalash
 TRUNCATE TABLE Orders;
 
--- Orders jadvaliga ma’lumot kiritish
+-- Orders jadvaliga maâ€™lumot kiritish
 INSERT INTO Orders (id, customerId) VALUES (1, 3);
 INSERT INTO Orders (id, customerId) VALUES (2, 1);
 
@@ -318,7 +318,7 @@ INSERT INTO Orders (id, customerId) VALUES (2, 1);
 -- Exam Attendance Report: Students x Subjects matrix
 -- ==================================================
 
--- Jadval mavjud bo‘lsa, uni o‘chiradi
+-- Jadval mavjud boâ€˜lsa, uni oâ€˜chiradi
 DROP TABLE IF EXISTS Examinations;
 DROP TABLE IF EXISTS Subjects;
 DROP TABLE IF EXISTS Students;
@@ -344,7 +344,7 @@ CREATE TABLE Examinations (
 );
 GO
 
--- Students jadvaliga ma’lumot kiritish
+-- Students jadvaliga maâ€™lumot kiritish
 INSERT INTO Students (student_id, student_name) VALUES
 (1, 'Alice'),
 (2, 'Bob'),
@@ -352,14 +352,14 @@ INSERT INTO Students (student_id, student_name) VALUES
 (6, 'Alex');
 GO
 
--- Subjects jadvaliga ma’lumot kiritish
+-- Subjects jadvaliga maâ€™lumot kiritish
 INSERT INTO Subjects (subject_name) VALUES
 ('Math'),
 ('Physics'),
 ('Programming');
 GO
 
--- Examinations jadvaliga ma’lumot kiritish
+-- Examinations jadvaliga maâ€™lumot kiritish
 INSERT INTO Examinations (student_id, subject_name) VALUES
 (1, 'Math'),
 (1, 'Physics'),
@@ -375,7 +375,7 @@ INSERT INTO Examinations (student_id, subject_name) VALUES
 GO
 
 -- =============================================
--- Har bir talaba har bir fan bo‘yicha nechta imtihonda qatnashgan
+-- Har bir talaba har bir fan boâ€˜yicha nechta imtihonda qatnashgan
 -- =============================================
 SELECT 
     s.student_id,
@@ -413,29 +413,29 @@ CREATE TABLE Examinations (
     subject_name VARCHAR(20)
 );
 
--- Jadvaldagi mavjud ma’lumotlarni tozalash
+-- Jadvaldagi mavjud maâ€™lumotlarni tozalash
 TRUNCATE TABLE Students;
 
--- Ma’lumot kiritish: Students
+-- Maâ€™lumot kiritish: Students
 INSERT INTO Students (student_id, student_name) VALUES 
 (1, 'Alice'),
 (2, 'Bob'),
 (13, 'John'),
 (6, 'Alex');
 
--- Subjects jadvalidagi ma’lumotlarni tozalash
+-- Subjects jadvalidagi maâ€™lumotlarni tozalash
 TRUNCATE TABLE Subjects;
 
--- Ma’lumot kiritish: Subjects
+-- Maâ€™lumot kiritish: Subjects
 INSERT INTO Subjects (subject_name) VALUES 
 ('Math'),
 ('Physics'),
 ('Programming');
 
--- Examinations jadvalidagi ma’lumotlarni tozalash
+-- Examinations jadvalidagi maâ€™lumotlarni tozalash
 TRUNCATE TABLE Examinations;
 
--- Ma’lumot kiritish: Examinations
+-- Maâ€™lumot kiritish: Examinations
 INSERT INTO Examinations (student_id, subject_name) VALUES 
 (1, 'Math'),
 (1, 'Physics'),
